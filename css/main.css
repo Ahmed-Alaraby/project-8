@@ -1,14 +1,88 @@
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box ;
+  -webkit-box-sizing: border-box ;
+}
+:root{
+--main-color:#FFCC01;
+--section-color:#1F373d;
+}
 body{
-  font-family: 'Alkalami', serif;
-font-family: 'Cairo', sans-serif;
-font-family: 'DynaPuff', cursive;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Shantell Sans', cursive;
-font-family: 'Tiro Devanagari Hindi', serif;
-font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
-svg{
-  color: red;
+a{
+text-decoration: none;
 }
+.container{
+  margin: 0 auto;
+  padding:0px 15px;
+}
+@media (min-width:768px){
+  .container{
+      width: 750px;
+  }
+}
+@media (min-width:992px){
+  .container{
+      width: 970px;
+  }
+}
+@media (min-width:1200px){
+  .container{
+      width: 1170px;
+  }
+}
+/* start header */
+.navbar .container .navbar-brand{
+  color: var(--section-color);
+  font-size: 35px;
+  font-weight: bold;
+}
+.navbar .container .navbar-brand:hover{
+  color: var(--main-color);
+}
+.navbar .container .navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar .container .navbar-toggler[aria-expanded="true"]{
+  border-color:var(--main-color) ;
+}
+.navbar .container .nav-item .nav-link{
+  font-size: 20px;
+  color: var(--section-color);
+}
+.navbar .container .nav-item .nav-link .active,
+.navbar .container .nav-item .nav-link:focus,
+.navbar .container .nav-item .nav-link:hover,
+.navbar .container .form a:first-child:hover{
+  color: var(--main-color);
+}
+.navbar .container .form{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 350px;
+}
+@media (max-width:991px) {
+  .navbar .container .form{
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.navbar .container .form a:first-child{
+  font-size: 20px;
+  color: var(--section-color);
+}
+.navbar .container .form .btn{
+  padding: 10px 40px;
+    background-color: var(--main-color);
+    color: var(--section-color);
+    font-size: 20px;
+}
+.navbar .container .form .btn:hover{
+  background-color:white;
+  border: 1px solid var(--main-color);
+}
+/* End header */
+/* start landing */
+/* end landing */
