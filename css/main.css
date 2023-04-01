@@ -346,4 +346,100 @@ text-decoration: none;
     text-decoration-line: underline;
     font-weight: 700;
 }
+/* start services */
+.services.container{
+  color: var(--section-color);
+}
+.services .container .box .image{
+  position: relative;
+  left: -120px;
+}
+.services .container .box .box-text{
+  width: 40%;
+}
+.services .container .box p{
+  line-height: 1.8;
+}
+@media (max-width:991px) {
+  .services .container .box .image{
+    left: 0;
+  }
+}
+.services .container .box .image img{
+  width:630px ;
+  height: 650px;
+}
+@media (max-width:767px) {
+  .services .container .box .image img{
+    width: 100%;
+  }
+}
+/* end services */
+/* start agents */
+.agents{
+  background-color: var(--bacckground-color);
+  color: var(--section-color);
+}
+.agents svg{
+  color: var(--section-color);
+}
+.agents .container .box img{
+  width: 100%;
+}
+.agents .container .box .box-text{
+  background-color: white;
+}
+.agents .container .box .box-text .text p{
+  color: var(--main-color);
+}
+/* end agents */
+.awards .container .flex-1 .image img{
+  width: 540px;
+  height: 330px;
+}
+@media (max-width:657px) {
+  .awards .container .flex-1 .image img{
+    width: 100%;
+  }
+}
+.awards .container .flex-1 .image .text{
+  padding: 20px;
+  background-color: var(--main-color);
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+}
+.awards .container .flex-1 .text{
+  width: 45%;
+  color: var(--section-color);
+}
+.awards .container .flex-1 .text p{
+  line-height: 1.8;
+}
+.awards .container .flex-1 .text a{
+  text-decoration: none;
+  display: block;
+  background-color: var(--section-color);
+  width: fit-content;
+  margin: 20px auto 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 50px;
+  text-transform: capitalize;
+  transition: .3s;
+}
+@media (max-width:767px) {
+  .awards .container .flex-1 .text a{
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 25px;
+  }
+}
+.awards .container .flex-1 .text a:hover{
+  background-color: var(--main-color);
+}
 
