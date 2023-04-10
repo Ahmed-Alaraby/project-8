@@ -3,6 +3,10 @@
   -moz-box-sizing: border-box ;
   -webkit-box-sizing: border-box ;
 }
+*::selection{
+  background-color: var(--section-color);
+  color: var(--main-color);
+}
 :root{
 --main-color:#FFCC01;
 --section-color:#1F373d;
